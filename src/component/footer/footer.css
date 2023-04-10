@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer-btn{
+    background-color: rgb(177,159,137);
+    border-radius: 75px;
+    border-width: 1px;
+    border-color: rgb(177,159,137);
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 60px;
+
+}
+
+.footer-text-btn{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255,252,245);
+    padding: 20px 25px 20px 25px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

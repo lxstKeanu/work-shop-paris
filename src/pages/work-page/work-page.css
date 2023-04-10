@@ -1,0 +1,50 @@
+.g{
+    position: relative;
+}
+
+.album-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 55px;
+}
+
+.photo-preview{
+    width: 25%;
+}
+
+.preview-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 74px;
+    font-weight: 300;
+    margin: 25px 0 10px 0;
+    
+}
+.preview-title-2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.preview-date{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.arrow{
+margin-bottom: 150px;
+cursor: pointer;
+}
+.react-photo-gallery--gallery img{
+    width: 47%;
+    height: 47%;
+    margin: 10px !important;
+}
+
+.react-photo-gallery--gallery img:hover{
+background-color: rgba(0, 0, 0, 0.4) !important;
+}

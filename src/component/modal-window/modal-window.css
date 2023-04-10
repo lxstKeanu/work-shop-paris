@@ -1,0 +1,51 @@
+.modal{
+    width: 450px;
+    margin: 0 auto;
+    background-color: rgb(177,159,137);
+    border: solid #fff;
+    position: absolute;
+    left: 38%;
+    bottom: 5%;
+}
+.modal-cancel{
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+.modal-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.modal-title-text{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: #fff;
+}
+.modal-social-information{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0 58px;
+}
+
+.modal-name{
+    font-family: 'Cormorant Garamond', serif;
+   font-size: 19px;
+    margin-bottom: 20px;
+}
+.modal-line{
+    border: 1px solid #fff;
+    height: 120px;
+
+}
+
+.modal-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.svg-icon{
+    display: flex;
+    gap: 20px;
+}
