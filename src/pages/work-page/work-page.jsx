@@ -13,7 +13,7 @@ function WorkPage() {
 
   const handlerScrolldown = () => {
     window.scrollTo({
-      top: 0,
+      top: 1100,
       left: 0,
       behavior: "smooth",
     });
