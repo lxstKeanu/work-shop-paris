@@ -41,7 +41,7 @@
 
 .modal-name{
     font-family: 'Cormorant Garamond', serif;
-   font-size: 19px;
+    font-size: 19px;
     margin-bottom: 20px;
     cursor: default;
 }
@@ -64,4 +64,40 @@
 
 .social-link:hover{
 transform: scale(1.2);
+}
+
+@media screen and (min-width: 200px) and (max-width: 320px){
+
+    .modal{
+        top: 94%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+
+    .modal{
+        top: 90%;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 575px){
+
+    .modal{
+        top: 90%;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+
+    .modal{
+        top: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px){
+
+    .modal{
+        top: 95%;
+    }
 }

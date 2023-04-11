@@ -15,7 +15,6 @@ function WorkPage() {
     const element = document.getElementById("section-1");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setTimeout(60);
     }
   };
 
@@ -40,10 +39,12 @@ function WorkPage() {
       </section>
       <section id="section-1" className="g">
         <GalleryPhoto />
-        <ModalWindow
-          handleAddFormHide={handleAddFormHide}
-          showAddForm={showAddForm}
-        />
+        <div id="modal">
+          <ModalWindow
+            handleAddFormHide={handleAddFormHide}
+            showAddForm={showAddForm}
+          />
+        </div>
       </section>
       <Footer handleAddFormShow={handleAddFormShow} />
     </div>

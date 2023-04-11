@@ -10,7 +10,7 @@ function ModalWindow({ showAddForm, handleAddFormHide }) {
   return (
     <aside>
       {showAddForm && (
-        <div className="modal">
+        <div id="modal" className="modal">
           <button className="modal-cancel" onClick={handleAddFormHide}>
             <Cancel />
           </button>
