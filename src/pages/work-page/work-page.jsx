@@ -11,12 +11,12 @@ import ModalWindow from "../../component/modal-window/modal-window";
 function WorkPage() {
   const [showAddForm, setShowAddForm] = useState(false);
 
-  const handlerScrolldown = () => {
-    window.scrollTo({
-      top: 1100,
-      left: 0,
-      behavior: "smooth",
-    });
+  const handleClickScroll = () => {
+    const element = document.getElementById("section-1");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setTimeout(60);
+    }
   };
 
   const handleAddFormShow = () => {
@@ -27,22 +27,24 @@ function WorkPage() {
   };
   return (
     <div className="container">
-      <div className="album-preview">
-        <img className="photo-preview" src={preview} alt="" />
-        <span className="preview-title">Start shooting in Europe!</span>
-        <span className="preview-title-2">Workshop Paris</span>
-        <span className="preview-date">May 10</span>
-        <div className="arrow">
-          <ArrowDown onClick={handlerScrolldown} />
+      <section className="album-root">
+        <div className="album-preview">
+          <img className="photo-preview" src={preview} alt="" />
+          <span className="preview-title">Start shooting in Europe!</span>
+          <span className="preview-title-2">Workshop Paris</span>
+          <span className="preview-date">May 10</span>
         </div>
-      </div>
-      <div className="g">
+        <div className="arrow">
+          <ArrowDown onClick={handleClickScroll} />
+        </div>
+      </section>
+      <section id="section-1" className="g">
         <GalleryPhoto />
         <ModalWindow
           handleAddFormHide={handleAddFormHide}
           showAddForm={showAddForm}
         />
-      </div>
+      </section>
       <Footer handleAddFormShow={handleAddFormShow} />
     </div>
   );

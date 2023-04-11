@@ -20,7 +20,7 @@ function GalleryPhoto() {
   };
 
   return (
-    <div className="g">
+    <div>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

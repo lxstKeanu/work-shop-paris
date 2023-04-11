@@ -8,12 +8,12 @@ import "./modal-window.css";
 
 function ModalWindow({ showAddForm, handleAddFormHide }) {
   return (
-    <div>
+    <aside>
       {showAddForm && (
         <div className="modal">
-          <div className="modal-cancel">
-            <Cancel onClick={handleAddFormHide} />
-          </div>
+          <button className="modal-cancel" onClick={handleAddFormHide}>
+            <Cancel />
+          </button>
           <div className="modal-information">
             <div className="modal-title">
               <span className="modal-title-text">
@@ -24,10 +24,13 @@ function ModalWindow({ showAddForm, handleAddFormHide }) {
               <div className="modal-social">
                 <span className="modal-name">Alesia</span>
                 <div className="svg-icon">
-                  <a href="https://instagram.com/alesia__ag">
+                  <a
+                    className="social-link"
+                    href="https://instagram.com/alesia__ag"
+                  >
                     <Instagram />
                   </a>
-                  <a href="https://t.me/alesia_ag">
+                  <a className="social-link" href="https://t.me/alesia_ag">
                     <Telegram />
                   </a>
                 </div>
@@ -36,10 +39,13 @@ function ModalWindow({ showAddForm, handleAddFormHide }) {
               <div className="modal-social">
                 <span className="modal-name">Valeria</span>
                 <div className="svg-icon">
-                  <a href="https://instagram.com/leka_fotografia">
+                  <a
+                    className="social-link"
+                    href="https://instagram.com/leka_fotografia"
+                  >
                     <Instagram />
                   </a>
-                  <a href="https://t.me/ValeriiaChirun">
+                  <a className="social-link" href="https://t.me/ValeriiaChirun">
                     <Telegram />
                   </a>
                 </div>
@@ -48,7 +54,7 @@ function ModalWindow({ showAddForm, handleAddFormHide }) {
           </div>
         </div>
       )}
-    </div>
+    </aside>
   );
 }
 export default ModalWindow;
