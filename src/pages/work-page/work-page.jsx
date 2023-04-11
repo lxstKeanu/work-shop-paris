@@ -1,12 +1,12 @@
 /** @format */
 
 import { React, useState } from "react";
-import "./work-page.css";
-import preview from "../../images/preview-1.png";
+import preview from "../../images/preview-1.jpg";
 import { ReactComponent as ArrowDown } from "../../images/arrow-down.svg";
 import GalleryPhoto from "../../utilities/gallery/gallery";
 import Footer from "../../component/footer/footer";
 import ModalWindow from "../../component/modal-window/modal-window";
+import "./work-page.css";
 
 function WorkPage() {
   const [showAddForm, setShowAddForm] = useState(false);
