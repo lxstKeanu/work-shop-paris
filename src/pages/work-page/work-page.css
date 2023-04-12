@@ -56,128 +56,37 @@
     margin: 10px !important;
 }
 
-.react-photo-gallery--gallery img:hover{
+.react-photo-gallery--gallery img:hover * {
 background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-@media screen and (min-width:200px){ 
-   
-    .album-preview{
-        margin-top: 3vh;
-    }
+@media screen and (min-width: 250px) and (max-width: 375px){
 
-    .photo-preview{
-        width: 65%;
-    }
-
-    .preview-title{
-        font-size: 21px;
-        text-align: center;
-        margin: 5px 0 5px 0;
-    }
-    
-    .preview-title-2{
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
-        margin-bottom: 64px;
-    }
-
-    .react-photo-gallery--gallery img{
-        width: 93%;
-        height: 93%;
-        margin: 10px !important;
-    }
-
-}
-
-@media screen and (max-width:250px){ 
-   
-    .album-preview{
-        margin-top: 13vh;
-    }
-
-    .photo-preview{
-        width: 70%;
-    }
-
-    .preview-title{
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 21px;
-    }
-    
-    .preview-title-2{
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
-        margin-bottom: 64px;
-    }
-
-    .react-photo-gallery--gallery img{
-        width: 93%;
-        height: 93%;
-        margin: 10px !important;
-    }
-
-}
-
-@media screen and (min-width:250px) and (max-height:533px){ 
-   
     .album-preview{
         margin-top: 4vh;
     }
 
     .photo-preview{
-        width: 60%;
-    }
-
-    .preview-title{
-        font-size: 28px;
-    }
-    
-    .preview-title-2{
-        font-size: 22px;
-    }
-    
-    .preview-date{
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (min-width: 321px) and (max-width: 375px){
-
-    .photo-preview{
         width: 65%;
     }
 
     .preview-title{
-        font-size: 34px;
-        text-align: center;
+        font-size: 27px;
         margin-bottom: 21px;
     }
     
     .preview-title-2{
-        font-size: 30px;
+        font-size: 21px;
         margin-bottom: 10px;
     }
     
     .preview-date{
-        font-size: 16px;
-        margin-bottom: 64px;
+        font-size: 13px;
     }
 
     .react-photo-gallery--gallery img{
         width: 95%;
         height: 95%;
-        margin: 10px !important;
     }
 }
 
@@ -191,7 +100,7 @@ background-color: rgba(0, 0, 0, 0.4) !important;
 @media screen and (min-width: 376px) and (max-width: 575px){
 
     .album-preview{
-        margin-top: 14vh;
+        margin-top: 16vh;
     }
 
     .photo-preview{
@@ -200,7 +109,6 @@ background-color: rgba(0, 0, 0, 0.4) !important;
 
     .preview-title{
         font-size: 38px;
-        text-align: center;
         margin: 10px 0 10px 0;
     }
     
@@ -216,24 +124,13 @@ background-color: rgba(0, 0, 0, 0.4) !important;
     .react-photo-gallery--gallery img{
         width: 95%;
         height: 95%;
-        margin: 10px !important;
-    }
-
-
-}
-
-@media screen and (min-width: 376px) and (max-width: 575px) and (max-height:720px){
-
-    .album-preview{
-        margin-top: 5vh;
     }
 }
-
 
 @media screen and (min-width: 576px) and (max-width: 768px){
 
     .album-preview{
-        margin-top: 8vh;
+        margin-top: 6vh;
     }
 
     .photo-preview{
@@ -242,7 +139,6 @@ background-color: rgba(0, 0, 0, 0.4) !important;
 
     .preview-title{
         font-size: 55px;
-        text-align: center;
         margin-bottom: 21px;
     }
     
@@ -251,64 +147,13 @@ background-color: rgba(0, 0, 0, 0.4) !important;
         margin-bottom: 17px;
     }
     
-    .preview-date{
-        font-size: 16px;
+    .arrow{
+        top: 75%;
     }
 
     .react-photo-gallery--gallery img{
         width: 95%;
         height: 95%;
-        margin: 10px !important;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 768px) and (min-width: 359px){
-
-    .album-preview{
-        margin-top: 8vh;
-    }
-
-    .photo-preview{
-        width: 23%;
-    }
-
-    .preview-title{
-        font-size: 21px;
-        text-align: center;
-        margin-bottom: 21px;
-        margin: 10px 0 10px 0;
-    }
-    
-    .preview-title-2{
-        font-size: 18px;
-        margin-bottom: 17px;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 768px) and (max-width: 960px){
-
-    .album-preview{
-        margin-top: 20vh;
-    }
-
-    .photo-preview{
-        width: 56%;
-    }
-
-    .preview-title{
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 21px;
-        margin: 10px 0 10px 0;
-    }
-    
-    .preview-title-2{
-        font-size: 40px;
-        margin-bottom: 17px;
-    }
-
-    .preview-date{
-        font-size: 18px;
     }
 }
 
@@ -324,147 +169,35 @@ background-color: rgba(0, 0, 0, 0.4) !important;
 
     .preview-title{
         font-size: 60px;
-        text-align: center;
         margin: 20px 0 10px 0;
     }
     
-    .preview-title-2{
-        font-size: 41px;
-        margin-bottom: 17px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
+    .arrow{
+        top: 70%;
     }
 
     .react-photo-gallery--gallery img{
         width: 95%;
         height: 95%;
-        margin: 10px !important;
     }
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height:1368px){
-
-    .album-preview{
-        margin-top: 13vh;
-    }
-
-    .photo-preview{
-        width: 60%;
-    }
-
-    .preview-title{
-        font-size: 75px;
-    }
-    
-    .preview-title-2{
-        font-size: 60px;
-    }
-    
-    .preview-date{
-        font-size: 21px;
-    }
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 1280px){
-
-    .album-preview{
-        margin-top: 8vh;
-    }
-
-    .photo-preview{
-        width: 50%;
-    }
-
-    .preview-title{
-        font-size: 60px;
-        text-align: center;
-        margin: 30px 0 10px 0;
-    }
-    
-    .preview-title-2{
-        font-size: 41px;
-        margin-bottom: 17px;
-    }
-    
-    .preview-date{
-        font-size: 21px;
-    }
-
-    .react-photo-gallery--gallery img{
-        width: 95%;
-        height: 95%;
-        margin: 10px !important;
-    }
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 720px){
-
-    .album-preview{
-        margin-top: 8vh;
-    }
-
-    .photo-preview{
-        width: 25%;
-    }
-
-    .preview-title{
-        font-size: 42px;
-        text-align: center;
-        margin: 20px 0 10px 0;
-    }
-    
-    .preview-title-2{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
-    }
-
-    .react-photo-gallery--gallery img{
-        width: 95%;
-        height: 95%;
-        margin: 10px !important;
-    }
-
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px){
 
     .album-preview{
-        margin-top: 6vh;
+        margin-top: 3vh;
     }
     
     .photo-preview{
         width: 28%;
     }
     .preview-title{
-        font-size: 60px;
-        text-align: center;
         margin-bottom: 18px;
     }
-    
-    .preview-title-2{
-        font-size: 41px;
-        margin-bottom: 17px;
-    }
-    
+
     .preview-date{
         font-size: 16px;
     }
-
-    .react-photo-gallery--gallery img{
-        width: 48%;
-        height: 48%;
-        margin: 10px !important;
-    }
-
 
 }
 
@@ -484,23 +217,8 @@ background-color: rgba(0, 0, 0, 0.4) !important;
         margin-bottom: 21px;
     }
     
-    .preview-title-2{
-        font-size: 41px;
-        margin-bottom: 17px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
-    }
-
-    .react-photo-gallery--gallery img{
-        width: 48%;
-        height: 48%;
-        margin: 10px !important;
-    }
-
-
 }
+
 @media screen and (min-width: 1921px) and (max-width: 2685px){
 
     .album-preview{
@@ -512,18 +230,7 @@ background-color: rgba(0, 0, 0, 0.4) !important;
     }
 
     .preview-title{
-        font-size: 60px;
-        text-align: center;
         margin-bottom: 21px;
-    }
-    
-    .preview-title-2{
-        font-size: 41px;
-        margin-bottom: 17px;
-    }
-    
-    .preview-date{
-        font-size: 16px;
     }
 
     .react-photo-gallery--gallery img{
