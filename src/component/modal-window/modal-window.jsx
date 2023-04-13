@@ -11,10 +11,20 @@ function SocialMedia({ name, ins, face }) {
     <div className="modal-social">
       <span className="modal-name">{name}</span>
       <div className="svg-icon">
-        <a className="social-link" href={ins}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+          href={ins}
+        >
           <Instagram />
         </a>
-        <a className="social-link" href={face}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+          href={face}
+        >
           <Telegram />
         </a>
       </div>
