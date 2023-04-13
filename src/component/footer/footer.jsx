@@ -6,10 +6,8 @@ import "./footer.css";
 function Footer({ handleAddFormShow }) {
   return (
     <footer className="footer">
-      <div className="footer-btn">
-        <span className="footer-text-btn" onClick={handleAddFormShow}>
-          Contact me
-        </span>
+      <div className="footer-btn" onClick={handleAddFormShow}>
+        <span className="footer-text-btn">Contact me</span>
       </div>
     </footer>
   );

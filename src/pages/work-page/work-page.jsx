@@ -1,6 +1,6 @@
 /** @format */
 
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import preview from "../../images/preview-1.jpg";
 import { ReactComponent as ArrowDown } from "../../images/arrow-down.svg";
 import GalleryPhoto from "../../utilities/gallery/gallery";
@@ -10,6 +10,9 @@ import "./work-page.css";
 
 function WorkPage() {
   const [showAddForm, setShowAddForm] = useState(false);
+  useEffect(() => {
+    document.body.classList.toggle("modal-open", showAddForm);
+  }, [showAddForm]);
 
   const handleClickScroll = () => {
     const element = document.getElementById("section-1");
@@ -21,6 +24,7 @@ function WorkPage() {
   const handleAddFormShow = () => {
     setShowAddForm(true);
   };
+
   const handleAddFormHide = () => {
     setShowAddForm(false);
   };
@@ -37,7 +41,7 @@ function WorkPage() {
           <ArrowDown onClick={handleClickScroll} />
         </div>
       </section>
-      <section id="section-1" className="g">
+      <section id="section-1" className="gallery-section">
         <GalleryPhoto />
         <div id="modal">
           <ModalWindow

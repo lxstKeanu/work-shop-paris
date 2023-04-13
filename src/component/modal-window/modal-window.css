@@ -1,12 +1,20 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
 .modal{
     width: 100%;
     max-width: 450px;
     background-color: rgb(177,159,137);
     border: solid #fff;
-    position: absolute;
+    position: sticky;
     left:50%;
-    top: 85%;
-    transform:translate(-50%, -50%);
+    top: 25%;
+    transform:translate(-50%);
     box-sizing: border-box;
 }
 .modal-cancel{
@@ -69,21 +77,38 @@ transform: scale(1.2);
 @media screen and (min-width: 200px) and (max-width: 320px){
 
     .modal{
-        top: 94%;
+        height: 15%;
+        top: 0%;
+        transform:translate(0);
+    }
+
+    .modal-title-text{
+        font-size: 18px;
+    }
+    
+    .modal-name{
+        font-size: 15px;
+    }
+
+    .modal-line{
+        height: 73px;
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px){
 
     .modal{
-        top: 90%;
+        top: 50%;
+        transform:translate(0);
     }
 }
 
 @media screen and (min-width: 376px) and (max-width: 575px){
 
     .modal{
-        top: 90%;
+        top: 50%;
+        left: 3%;
+        transform:translate(0);
     }
 }
 
@@ -91,13 +116,19 @@ transform: scale(1.2);
 @media screen and (min-width: 576px) and (max-width: 768px){
 
     .modal{
-        top: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: -183px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px){
 
     .modal{
-        top: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: -183px;
     }
 }
