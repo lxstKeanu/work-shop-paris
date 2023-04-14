@@ -61,8 +61,8 @@
     margin: 10px !important;
 }
 
-.react-photo-gallery--gallery img:hover * {
-background-color: rgba(0, 0, 0, 0.4) !important;
+.react-photo-gallery--gallery img:hover{
+    opacity: 0.9;
 }
 
 @media screen and (min-width: 250px) and (max-width: 375px){
